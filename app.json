@@ -85,7 +85,7 @@
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": ""
+         "value": "dYXQ1ZKWxuI31YCahYJqmwJz3OgeH7m4Kx8AdDNiStofXC7OzM3R1d_OrBYgENwX"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
