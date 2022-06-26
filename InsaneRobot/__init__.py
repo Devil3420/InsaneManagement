@@ -227,7 +227,11 @@ pgram = Client("InsaneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-
+try:
+    ubot2.start()
+except BaseException:
+    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
 
 pbot = Client(
     ":memory:",
