@@ -1,11 +1,9 @@
-#  © @always_hungry365
-# Owner Mayank
-# Roses are red, Violets are blue, A face like yours, Belongs in a zoo
-
-
+# This file is part of YuiGBot (Telegram Bot)
+# I give credit for this module to YuiGBot.
 
 from InsaneRobot.events import register
 from InsaneRobot import telethn
+
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
@@ -13,7 +11,7 @@ from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
 
-wibu = ""
+wibu = "InsaneRobot"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=wibu)
 auth_url = r["auth_url"]
@@ -88,5 +86,11 @@ def resize_image(image):
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
+
+__help__ = """
+ *ᴜᴘʟᴏᴀᴅ ᴘɪᴄᴛᴜʀᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ sᴇʀᴠᴇʀ...*
+ - `/tgm` `/tgt` ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.
+"""
+
 
 __mod_name__ = "🖼️ ᴛᴇʟᴇɢʀᴀᴘʜ"
