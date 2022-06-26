@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>❤️ Alexa Management Bot ❤️</b></h1>
+<h1 align="center"><b>❤️ Insane Management Bot ❤️</b></h1>
 
 <h4 align="center">Insane A Powerful, Smart And Simple Group Manager <br> ... Written with AioGram , Pyrogram and Telethon...</h4>
 <p align='center'>
@@ -35,7 +35,6 @@ The Easiest Way To Deploy This On Heroku For Any Browser Copy Link Supported
 
 - [Mayank](https://t.me/always_hungry365)
 - [YouTube](https://www.youtube.com/c/JankariKiDuniya)
-- [Harshit Sharma](https://t.me/HarshitSharma361)
 - Thank Vegeta
 
 ## Commands ❤️
