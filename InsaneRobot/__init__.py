@@ -130,9 +130,7 @@ if ENV:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
-else:
-    from InsaneRobot.config import Development as Config
-    TOKEN = Config.TOKEN
+
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
