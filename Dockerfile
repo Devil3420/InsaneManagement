@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/InsaneRobotRobot
+# Copy Python Requirements to /root/InsaneRobot
 RUN git clone -b shiken https://github.com/Devil3420/InsaneManagement /root/InsaneRobot
 WORKDIR /root/InsaneRobot
 
-#Copy config file to /root/InsaneRobotRobot/InsaneRobotRobot
-COPY ./InsaneRobotRobot/sample_config.py ./InsaneRobotRobot/config.py* /root/InsaneRobot/InsaneRobot
+#Copy config file to /root/InsaneRobot
+COPY ./InsaneRobot/sample_config.py ./InsaneRobot/config.py* /root/InsaneRobot
 
 ENV PATH="/home/bot/bin:$PATH"
 
