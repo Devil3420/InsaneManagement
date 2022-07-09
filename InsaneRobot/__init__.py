@@ -215,8 +215,8 @@ if ENV:
 aiohttpsession = ClientSession()
 # # arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 # # updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-pgram = Client("InsaneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+# # telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
+# # pgram = Client("InsaneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
