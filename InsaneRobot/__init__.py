@@ -210,11 +210,7 @@ if ENV:
 
 
 
-if not SPAMWATCH_API:
-    sw = None
-    LOGGER.warning("SpamWatch API key missing! recheck your config.")
-else:
-    sw = spamwatch.Client(SPAMWATCH_API)
+
     
 aiohttpsession = ClientSession()
 arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
