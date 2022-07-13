@@ -23,7 +23,7 @@ from telethon.sessions import StringSession
 StartTime = time.time()
 
 # enable logging
-logging.basicConfig(
+logging.basicconfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[logging.FileHandler('log.txt'),
               logging.StreamHandler()],
@@ -129,7 +129,10 @@ if ENV:
     except ValueError:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
-
+        
+else:
+    from InsaneRobot.config import Development as Config
+    TOKEN = Config.TOKEN
 
 
     try:
@@ -213,11 +216,11 @@ if ENV:
 
     
 aiohttpsession = ClientSession()
-# # arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-# # updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-# # telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
-# # pgram = Client("InsaneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
-# # dispatcher = updater.dispatcher
+arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
+pgram = Client("InsaneRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+dispatcher = updater.dispatcher
 
 ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 try:
