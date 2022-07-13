@@ -23,7 +23,7 @@ from telethon.sessions import StringSession
 StartTime = time.time()
 
 # enable logging
-logging.basicconfig(
+logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[logging.FileHandler('log.txt'),
               logging.StreamHandler()],
