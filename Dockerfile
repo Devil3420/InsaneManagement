@@ -68,8 +68,8 @@ RUN pip3 install --upgrade pip setuptools
 RUN git clone -b shiken https://github.com/Devil3420/InsaneManagement /root/InsaneRobot
 WORKDIR /root/InsaneRobot
 
-#Copy config file to /root/InsaneRobot
-COPY ./InsaneRobot/sample_config.py ./InsaneRobot/config.py* /root/InsaneRobot
+#Copy config file to /root/InsaneRobot/InsaneRobot
+COPY ./InsaneRobot/sample_config.py ./InsaneRobot/config.py* /root/InsaneRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
