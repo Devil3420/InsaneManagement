@@ -11,8 +11,8 @@ import random
 import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
-from IronMenRobot.events import register
-from IronMenRobot import telethn as tbot, ubot2
+from InsaneRobot.events import register
+from InsaneRobot import telethn as tbot, ubot2
 
 def mediainfo(media):
     xx = str((str(media)).split("(", maxsplit=1)[0])
