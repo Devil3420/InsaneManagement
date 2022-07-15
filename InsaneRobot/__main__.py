@@ -103,7 +103,7 @@ buttons = [
     [
         InlineKeyboardButton(
                             text="💖 ᴀᴅᴅ Insane ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💖",
-                            url="t.me/Insane_MANAGEMENT_BOT?startgroup=true"),
+                            url="t.me/Insane_MANAGEMENT_Robot?startgroup=true"),
                     ],
                    
                     [                  
