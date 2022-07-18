@@ -20,7 +20,7 @@ from InsaneRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from InsaneRobot.modules.helper_funcs.extraction import extract_user
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-GN_IMG= "https://telegra.ph/file/c1ca97093abb67d0a315f.jpg"
+GN_IMG= "https://telegra.ph/file/8801343e00c105c8847f3.mp4"
 DECIDE_IMG= "https://telegra.ph/file/c1ca97093abb67d0a315f.jpg"
 JUDGE_IMG= "https://telegra.ph/file/c1ca97093abb67d0a315f.jpg"
 
@@ -33,7 +33,7 @@ def goodnight(update, context):
     reply = f"*Hey {escape_markdown(first_name)} \nGood Night! 😴*"
     message.reply_photo(GN_IMG,reply, parse_mode=ParseMode.MARKDOWN)
 
-GM_IMG= "https://telegra.ph/file/c1ca97093abb67d0a315f.jpg"
+GM_IMG= "https://telegra.ph/file/29fc3e36fe9a5c1270864.mp4"
 @run_async
 @typing_action
 def goodmorning(update, context):
@@ -42,7 +42,7 @@ def goodmorning(update, context):
     reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
     message.reply_photo(GM_IMG,reply, parse_mode=ParseMode.MARKDOWN)
     
-ASD_IMG= "https://telegra.ph/file/c1ca97093abb67d0a315f.jpg"
+ASD_IMG= "https://telegra.ph/file/d35877294e3cff7bbaaa4.mp4"
 @run_async
 @typing_action
 def mayank(update, context):
